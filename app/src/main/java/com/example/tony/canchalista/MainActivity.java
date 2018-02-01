@@ -4,6 +4,8 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -44,6 +46,9 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        FragmentManager m = getSupportFragmentManager();
+        m.beginTransaction().replace(R.id.contenedor, new FragmentInicio()).commit();
     }
     @Override
     public void onRequestPermissionsResult(int requestCode,
@@ -105,19 +110,23 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        FragmentManager m = getSupportFragmentManager();
+
+
 
         if (id == R.id.nav_inicio) {
             // Handle the camera action
+            m.beginTransaction().replace(R.id.contenedor, new FragmentInicio()).commit();
         } else if (id == R.id.nav_busqueda) {
-
+            m.beginTransaction().replace(R.id.contenedor, new FragmentBusqueda()).commit();
         } else if (id == R.id.nav_mapa) {
-
+            m.beginTransaction().replace(R.id.contenedor, new FragmentMapas()).commit();
         } else if (id == R.id.nav_equipo) {
-
+            m.beginTransaction().replace(R.id.contenedor, new FragmentEquipo()).commit();
         } else if (id == R.id.nav_torneo) {
-
+            m.beginTransaction().replace(R.id.contenedor, new FragmentTorneo()).commit();
         } else if (id == R.id.nav_reporte) {
-
+            //m.beginTransaction().replace(R.id.contenedor, new Fragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
