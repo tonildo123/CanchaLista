@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "85739194411",
+    "firebase_url": "https://canchalistaapp.firebaseio.com",
+    "project_id": "canchalistaapp",
+    "storage_bucket": "canchalistaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85739194411:android:99de2f0869940afd",
+        "android_client_info": {
+          "package_name": "com.example.tony.canchalista"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85739194411-lbakrk9tshsbp5jkq49lqe76echasoec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tony.canchalista",
+            "certificate_hash": "80906447c4ab1237e608f423ddfff04eadb5a1b7"
+          }
+        },
+        {
+          "client_id": "85739194411-jvo2kh8n7pin76akrokb07ga4b1oe8mc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMbcoZ2pdZhcBO3zqi0ptJz_o2SIDKttE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85739194411-jvo2kh8n7pin76akrokb07ga4b1oe8mc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
