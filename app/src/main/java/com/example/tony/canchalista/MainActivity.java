@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity
 
 
         if (id == R.id.nav_inicio) {
+
             // Handle the camera action
             m.beginTransaction().replace(R.id.contenedor, new FragmentInicio()).commit();
         } else if (id == R.id.nav_busqueda) {
