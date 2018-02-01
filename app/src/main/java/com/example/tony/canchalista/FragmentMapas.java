@@ -12,7 +12,7 @@ import android.view.ViewGroup;
  * A simple {@link Fragment} subclass.
  */
 public class FragmentMapas extends SupportMapFragment implements OnMapReadyCallback {
-    private GoogleMap mMap;
+    private GoogleMap   mMap;
 
     public FragmentMapas() {
         // Required empty public constructor
